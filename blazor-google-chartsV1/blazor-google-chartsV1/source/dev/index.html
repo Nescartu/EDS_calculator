@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>BlazorApp1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../blazor-google-charts/wwwroot/css/bootstrap.css" rel="stylesheet" />
+    <link href="../blazor-google-charts/wwwroot/css/app.css" rel="stylesheet" />
+</head>
+
+<body class="">
+
+    <div class="container bg-white mx-auto text-center p-5">
+        <h1>Google Charts with Blazor</h1>
+
+        <!-- this becomes the google chart-->
+        <div id="chart_div" class="card shadow  m-5"></div>
+
+        <div class="text-center d-inline-block p-3">
+            <div class="lead">Plot data from C# functions</div>
+
+            <div class="d-inline-block m-4">
+                <button class="btn btn-primary" onclick="createRandomChart()">Sin</button>
+            </div>
+
+            <div class="d-inline-block m-4">
+                <button class="btn btn-primary" onclick="createRandomChart()">Random</button>
+            </div>
+
+            <div class="d-inline-block m-4">
+                <button class="btn btn-primary" onclick="createRandomChart()">Walk</button>
+            </div>
+
+            <div>
+                <div class="d-inline-block m-4">
+                    <label for="CornerCount">Points: 123</label>
+                    <input type="range" class="form-range" id="CornerCount" min="0" max="1000">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script>
+        google.charts.load('current', { packages: ['corechart', 'line'] });
+        google.charts.setOnLoadCallback(createRandomChart);
+
+        // Optionally redraw every time the size changes
+        // window.onresize = function () { createNewChart(); };
+
+        function Range(pointCount) {
+            var values = new Array(pointCount);
+            for (var i = 0; i < pointCount; i++) {
+                values[i] = i;
+            }
+            return values;
+        }
+
+        function RandomWalk(pointCount, randomness = 10, startAt = 0) {
+            var values = new Array(pointCount);
+            values[0] = startAt;
+            for (var i = 1; i < pointCount; i++) {
+                values[i] = values[i - 1] + (Math.random() - .5) * randomness
+            }
+            return values;
+        }
+
+        function createRandomChart(pointCount = 1000) {
+            createNewChart(Range(pointCount), RandomWalk(pointCount));
+        }
+
+        function createNewChart(xs, ys) {
+
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', 'X');
+            data.addColumn('number', 'Y');
+
+            for (var i = 0; i < ys.length; i++) {
+                data.addRow([xs[i], ys[i]]);
+            }
+
+            var options = {
+                hAxis: { title: 'Horizontal Axis Label' },
+                vAxis: { title: 'Vertical Axis Label' },
+                title: 'This is a Google Chart in Blazor',
+                legend: { position: 'none' },
+                height: 500
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+</body>
+
+</html>
