@@ -44,9 +44,15 @@
             }
 
             var options = {
-                hAxis: { title: 'Horizontal Axis Label' },
-                vAxis: { title: 'Vertical Axis Label' },
-                title: 'This is a Google Chart in Blazor',
+                explorer: {
+                    actions: ['dragToZoom', 'rightClickToReset'],
+                    maxZoomOut: 2.0,
+                    maxZoomIn: 100.0,
+                    keepInBounds: true
+                },
+                hAxis: { title: 'Energy (keV)' },
+                vAxis: { title: 'Counts' },
+                title: 'EDS Spectrum',
                 legend: { position: 'none' },
             };
 

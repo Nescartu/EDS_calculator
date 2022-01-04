@@ -1,25 +1,19 @@
-﻿@page "/FileImport"
+﻿@page "/FileImport2"
 @inject IJSRuntime JsRuntime
 
 <div class="container bg-white mx-auto text-center p-5">
-    <div class="display-6">EDS calculator</div>
+    <div class="display-6">Google Charts with Blazor</div>
 
-    <div id="chart_div" class="card shadow m-5" style="height: 400px;"></div>
 
     <div class="d-inline-block m-4">
-        <button class="btn btn-primary" @onclick="() => PlotRandomXY(cleanDataX.ToArray(), cleanDataY.ToArray())">Write</button>
+        <button class="btn btn-primary" @onclick="() => PlotRandomXY(yyData)">RandomXY</button>
 
     </div>
 
 
     <div>
-        <textarea @bind="Description" @onclick="() => PlotRandomXY(cleanDataX.ToArray(), cleanDataY.ToArray())" />
+        <textarea @bind="Description" @onclick="() => PlotRandomXY(yyData)" />
     </div>
-
-    <div>
-        <textarea @bind="Description2" @onclick="() => PlotRandomXY(cleanDataX.ToArray(), cleanDataY.ToArray())" />
-    </div>
-
 
 
     <div class="d-inline-block m-4">
@@ -31,39 +25,39 @@
 
 
 @code{
-    private void PlotData(double[] xs, double[] ys)
+
+    public string value;
+    int filesize;
+    public string ProfilePicDataUrl { get; set; }
+    string dataFromFile;
+    List<double> filteredData;
+    public static double[] yyData { get; set; } = { 0, 0, 0 };
+    public string Description { get; set; } = "nothing here";
+    public double[] filteredDataArray { get; set; }
+
+    List<double> cleanDataX = new List<double>();
+    List<double> cleanDataY = new List<double>();
+    List<string> cleanText = new List<string>();
+
+
+
+    private void PlotWalk()
     {
-        JsRuntime.InvokeVoidAsync("createNewChart", new { xs, ys });
+
+        Description = yyData[1].ToString();
     }
 
-
-
-
-    string dataFromFile;
-    public string Description { get; set; } = "nothing here";
-    public string Description2 { get; set; } = "nothing here";
-
-    // Variables for filtering, contains clean data for plotting
-    public static List<double> cleanDataX = new List<double>();
-    public static List<double> cleanDataY = new List<double>();
-    public static List<string> cleanText = new List<string>();
-
-    private void PlotRandomXY(double[] xData, double[] yData)
+    private void PlotRandomXY(double[] yData)
     {
-        Description = "";
-        Description2 = "";
-        foreach (double item in xData)
+        foreach (double item in yData)
         {
             Description = Description + item.ToString() + "\n";
         }
 
-        foreach (double item2 in yData)
-        {
-            Description2 = Description2 + item2.ToString() + "\n";
-        }
 
-        PlotData(xData, yData);
     }
+
+
 
 
     private async Task OnInputFileChanged(InputFileChangeEventArgs inputFileChangeEvent)
@@ -73,16 +67,26 @@
         var buffer = new byte[file.Size];
         await file.OpenReadStream().ReadAsync(buffer);
 
+
         dataFromFile = System.Text.Encoding.UTF8.GetString(buffer);
 
-        FilterDataNoran(dataFromFile);
+        filteredData = FilterDataThermo(dataFromFile);
+
+        filteredDataArray = filteredData.ToArray();
+        yyData = filteredDataArray;
+        Description = yyData[1].ToString();
+
     }
 
 
 
-    private void FilterDataNoran(string rawData)
+    private List<double> FilterDataNoran(string rawData)
     {
         string[] rawDataArray = rawData.Split("\n");
+
+        string[] splitData = new string[rawDataArray.Length];
+        //double[] cleanData = new double[];
+
         int i = 0;
         bool spectrum = false;
 
@@ -93,9 +97,10 @@
             {
                 spectrum = true;
             }
-            else if (spectrum) // so the first run with Spectrum in the text is not parsed
+            else if (spectrum) //prvni prebeh nefunguje
             {
                 var dataCleanedSpectrum = dataCleaned.Split(",");
+                i = 0;
                 bool isDoubleX = double.TryParse(dataCleanedSpectrum[i], out double doubleElementX);
                 bool isDoubleY = double.TryParse(dataCleanedSpectrum[i + 1], out double doubleElementY);
                 if (isDoubleX & isDoubleY)
@@ -110,6 +115,12 @@
             }
         }
 
+        foreach (double item in cleanDataY)
+        {
+            Description = Description + item.ToString() + "\n";
+        }
+
+        return cleanDataY;
     }
 
 
