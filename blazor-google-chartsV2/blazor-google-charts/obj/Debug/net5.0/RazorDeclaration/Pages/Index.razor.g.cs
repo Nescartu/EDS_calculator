@@ -137,6 +137,9 @@ using BlazorInputFile;
 
     private async Task OnInputFileChanged(InputFileChangeEventArgs inputFileChangeEvent)
     {
+        cleanDataX.Clear();
+        cleanDataY.Clear();
+        cleanText.Clear();
         var file = inputFileChangeEvent.File;
 
         var buffer = new byte[file.Size];

@@ -4,7 +4,7 @@
 <div class="container bg-white mx-auto text-center p-5">
     <div class="display-6">EDS calculator</div>
 
-    <div id="chart_div" class="card shadow m-5" style="height: 400px;"></div>
+    <div id="chart_div" class="card shadow m-5" style="height: 400px;"></div> 
 
     <div class="d-inline-block m-4">
         <button class="btn btn-primary" @onclick="() => PlotXY(cleanDataX.ToArray(), cleanDataY.ToArray())">ShowData</button>
@@ -73,6 +73,9 @@
 
     private async Task OnInputFileChanged(InputFileChangeEventArgs inputFileChangeEvent)
     {
+        cleanDataX.Clear();
+        cleanDataY.Clear();
+        cleanText.Clear();
         var file = inputFileChangeEvent.File;
 
         var buffer = new byte[file.Size];
