@@ -11050,4 +11050,9 @@ textarea.form-control-lg {
     .d-print-none {
         display: none !important
     }
-}
+
+    .wrapper {
+        display: inline-grid;
+        grid-gap: 10px;
+    }
+    }

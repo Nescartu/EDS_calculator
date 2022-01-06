@@ -98,7 +98,7 @@ using BlazorInputFile;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Index.razor"
+#line 31 "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Index.razor"
       
     private void PlotData(double[] xs, double[] ys)
     {
@@ -106,11 +106,8 @@ using BlazorInputFile;
     }
 
 
-
-
     string dataFromFile;
     public string Description { get; set; } = "nothing here";
-    public string Description2 { get; set; } = "nothing here";
 
     // Variables for filtering, contains clean data for plotting
     public static List<double> cleanDataX = new List<double>();
@@ -119,16 +116,13 @@ using BlazorInputFile;
 
     private void PlotXY(double[] xData, double[] yData)
     {
+        double[,] yzArray = new double[xData.Count(), xData.Count()];
         Description = "";
-        Description2 = "";
-        foreach (double item in xData)
+        for (int i = 0; i < xData.Count(); i++)
         {
-            Description = Description + item.ToString() + "\n";
-        }
-
-        foreach (double item2 in yData)
-        {
-            Description2 = Description2 + item2.ToString() + "\n";
+            Description = Description + xData[i].ToString("00.00") + ", " + yData[i].ToString() + "\n";
+            yzArray[i,0] = yData[i] ;
+            yzArray[i, 1] = yData[i]+100;
         }
 
         PlotData(xData, yData);

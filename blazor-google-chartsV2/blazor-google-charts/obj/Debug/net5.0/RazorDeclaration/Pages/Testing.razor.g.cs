@@ -90,7 +90,7 @@ using BlazorInputFile;
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/FileImport")]
-    public partial class ImportFile : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class Testing : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -98,7 +98,7 @@ using BlazorInputFile;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\ImportFile.razor"
+#line 33 "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
       
     private void PlotData(double[] xs, double[] ys)
     {

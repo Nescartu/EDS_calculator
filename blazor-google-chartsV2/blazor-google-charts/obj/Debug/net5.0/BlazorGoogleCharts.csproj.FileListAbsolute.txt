@@ -4182,9 +4182,6 @@ C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\BlazorGoogleCharts.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\BlazorGoogleCharts.RazorComponent.input.cache
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
-C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\RazorDeclaration\Pages\Component.razor.g.cs
-C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\RazorDeclaration\Pages\DragDrop.razor.g.cs
-C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\RazorDeclaration\Pages\ImportFile.razor.g.cs
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
@@ -4194,9 +4191,6 @@ C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\BlazorGoogleCharts.TagHelpers.output.cache
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\BlazorGoogleCharts.RazorCoreGenerate.cache
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\Razor\App.razor.g.cs
-C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\Razor\Pages\Component.razor.g.cs
-C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\Razor\Pages\DragDrop.razor.g.cs
-C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\Razor\Pages\ImportFile.razor.g.cs
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
@@ -4404,3 +4398,5 @@ C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\BlazorGoogleCharts.dll
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\ref\BlazorGoogleCharts.dll
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\BlazorGoogleCharts.pdb
+C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\RazorDeclaration\Pages\Testing.razor.g.cs
+C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\Razor\Pages\Testing.razor.g.cs
