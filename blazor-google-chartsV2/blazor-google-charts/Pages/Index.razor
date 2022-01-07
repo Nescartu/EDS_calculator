@@ -2,39 +2,83 @@
 @inject IJSRuntime JsRuntime
 
 <div class="container bg-white mx-auto text-center p-5">
-    <div class="display-6">EDS calculator</div>
+    <div class="display-6">Google Charts with Blazor</div>
+    <div>
+        <a href="https://swharden.com/blog/2021-01-12-blazor-google-charts" style="text-decoration: none;">
+            <small>https://swharden.com/blog/2021-01-12-blazor-google-charts</small>
+        </a>
+    </div>
 
     <div id="chart_div" class="card shadow m-5" style="height: 400px;"></div> 
 
-    <div class="d-inline-block m-4">
-        <button class="btn btn-primary" @onclick="() => PlotXY(cleanDataX.ToArray(), cleanDataY.ToArray())">ShowData</button>
+    <div class="text-center d-inline-block p-3">
+        <div class="lead">Plot data from C# functions in a Google Chart</div>
 
-    </div>
+        <div class="d-inline-block m-4">
+            <button class="btn btn-primary" @onclick="PlotSin">Sin</button>
+        </div>
 
+<<<<<<< HEAD
     <div>
         <label> Data: X, Y</label>
     </div>
     <div>    
         <textarea @bind="Description" @onclick="() => PlotXY(cleanDataX.ToArray(), cleanDataY.ToArray())" />
     </div>
+=======
+        <div class="d-inline-block m-4">
+            <button class="btn btn-primary" @onclick="PlotRandom">Random</button>
+        </div>
+
+        <div class="d-inline-block m-4">
+            <button class="btn btn-primary" @onclick="PlotWalk">Walk</button>
+        </div>
+
+        <div class="d-inline-block m-4">
+            <button class="btn btn-primary" @onclick="PlotRandomXY">RandomXY</button>
+
+        </div>
+
+
+        <div>
+            <div class="d-inline-block m-4">
+                <label for="CornerCount">Points: @PointCount</label>
+                <input type="range" class="form-range" id="CornerCount" min="10" max="1000" @bind="PointCount" @bind:event="oninput">
+            </div>
+        </div>
+
+        <div class="d-inline-block m-4">
+            <Microsoft.AspNetCore.Components.Forms.InputFile OnChange="@OnInputFileChanged"> id="flpicker" </Microsoft.AspNetCore.Components.Forms.InputFile>
+        </div>
+>>>>>>> parent of 32057c2 (working version with zoom to share)
 
 
 
-    <div class="d-inline-block m-4">
-        <Microsoft.AspNetCore.Components.Forms.InputFile OnChange="@OnInputFileChanged"> id="flpicker" </Microsoft.AspNetCore.Components.Forms.InputFile>
     </div>
 </div>
 
+    }
 
 
 
 @code{
+    private int PointCount = 123;
+    private bool ChartHidden = true;
+    Random Rand = new Random();
+
     private void PlotData(double[] xs, double[] ys)
     {
         JsRuntime.InvokeVoidAsync("createNewChart", new { xs, ys });
     }
 
+    private void PlotSin()
+    {
+        double[] xs = Enumerable.Range(0, PointCount).Select(x => (double)x).ToArray();
+        double[] ys = xs.Select(x => Math.Sin(x / 10)).ToArray();
+        PlotData(xs, ys);
+    }
 
+<<<<<<< HEAD
     string dataFromFile;
     public string Description { get; set; } = "nothing here";
 
@@ -42,9 +86,31 @@
     public static List<double> cleanDataX = new List<double>();
     public static List<double> cleanDataY = new List<double>();
     public static List<string> cleanText = new List<string>();
-
-    private void PlotXY(double[] xData, double[] yData)
+=======
+    private void PlotRandom()
     {
+        double[] xs = Enumerable.Range(0, PointCount).Select(x => (double)x).ToArray();
+        double[] ys = xs.Select(x => Math.Sin(x / 10)).ToArray();
+        PlotData(xs, ys);
+
+        //double[] xs = Enumerable.Range(0, PointCount).Select(x => (double)x).ToArray();
+        //double[] ys = xs.Select(x => (Rand.NextDouble() - .5) * 1000).ToArray();
+        //PlotData(xs, ys);
+    }
+
+    private void PlotWalk()
+    {
+        double[] xs = Enumerable.Range(0, PointCount).Select(x => (double)x).ToArray();
+        double[] ys = new double[PointCount];
+        for (int i = 1; i < ys.Length; i++)
+            ys[i] = ys[i - 1] + Rand.NextDouble() - .5;
+        PlotData(xs, ys);
+    }
+>>>>>>> parent of 32057c2 (working version with zoom to share)
+
+    private void PlotRandomXY()
+    {
+<<<<<<< HEAD
         double[,] yzArray = new double[xData.Count(), xData.Count()];
         Description = "";
         for (int i = 0; i < xData.Count(); i++)
@@ -53,9 +119,41 @@
             //yzArray[i,0] = yData[i] ;
             //yzArray[i, 1] = yData[i]+100;
         }
-
-        PlotData(xData, yData);
+=======
+        //double[] xs = Enumerable.Range(0, PointCount).Select(x => Rand.NextDouble()).ToArray();
+        //double[] ys = Enumerable.Range(0, PointCount).Select(x => Rand.NextDouble()).ToArray();
+        //double[] xxData = { 0.0, 1.0, 2.0, 3.0, 4.0, 5.0};
+        //double[] yyData = { 0.2, 10, 0.5, 30, 50, 60 };
+        double[] yyyData = yyData;
+        double[] xxxData = new double[yyyData.Count()];
+        for (var i = 0; i < yyData.Count(); i = i + 1)
+        {
+            xxxData[i] = i;
+        }
+        PlotData(xxxData, yyyData);
     }
+
+    int filesize;
+    public string ProfilePicDataUrl { get; set; }
+
+    //private async Task OnInputFileChanged(InputFileChangeEventArgs inputFileChangeEvent)
+    //{
+    //    var file = inputFileChangeEvent.File;
+
+    //    var buffer = new byte[file.Size];
+    //    await file.OpenReadStream().ReadAsync(buffer);
+
+    //    ProfilePicDataUrl = $"data:image/png;base64,{Convert.ToBase64String(buffer)}";
+
+    //}
+
+
+    string dataFromFile;
+    List<double> filteredData;
+    double[] filteredDataArray;
+    public double[] yyData;
+>>>>>>> parent of 32057c2 (working version with zoom to share)
+
 
 
     private async Task OnInputFileChanged(InputFileChangeEventArgs inputFileChangeEvent)
@@ -68,35 +166,53 @@
         var buffer = new byte[file.Size];
         await file.OpenReadStream().ReadAsync(buffer);
 
-        dataFromFile = System.Text.Encoding.UTF8.GetString(buffer);
 
-        FilterDataNoran(dataFromFile);
+        dataFromFile = System.Text.Encoding.UTF8.GetString(buffer);
+        if (dataFromFile.Contains("NSS"))
+        {
+            filteredData = FilterDataNoran(dataFromFile);
+        }
+        else if (dataFromFile.Contains("ThermoFisher"))
+        {
+            //filteredData = FilterDataThermo(dataFromFile);
+        }
+        else
+        { 
+            throw new NotImplementedException("File not suported"); 
+        }
+        filteredDataArray = filteredData.ToArray();
+        yyData = filteredDataArray;
     }
 
-
-
-    private void FilterDataNoran(string rawData)
+    private List<double> FilterDataNoran(string rawData)
     {
         string[] rawDataArray = rawData.Split("\n");
+
+        string[] splitData = new string[rawDataArray.Length];
+        //double[] cleanData = new double[];
+        List<double> cleanDataX = new List<double>();
+        List<double> cleanDataY = new List<double>();
+        List<string> cleanText = new List<string>();
         int i = 0;
         bool spectrum = false;
 
         foreach (var data in rawDataArray)
         {
-            var dataCleaned = data.Trim(new Char[] { ' ', '\n', '\r', '\'' });
+            var dataCleaned = data.Trim(new Char[] { ' ', '\n', '\r', '\''  });
             if (dataCleaned.Contains("#SPECTRUM"))
             {
                 spectrum = true;
             }
-            else if (spectrum) // so the first run with Spectrum in the text is not parsed
+            if (spectrum) //prvni prebeh nefunguje
             {
                 var dataCleanedSpectrum = dataCleaned.Split(",");
+                i = 0;
                 bool isDoubleX = double.TryParse(dataCleanedSpectrum[i], out double doubleElementX);
-                bool isDoubleY = double.TryParse(dataCleanedSpectrum[i + 1], out double doubleElementY);
+                bool isDoubleY = double.TryParse(dataCleanedSpectrum[i+1], out double doubleElementY);
                 if (isDoubleX & isDoubleY)
                 {
                     cleanDataX.Add(doubleElementX);
-                    cleanDataY.Add(doubleElementY);
+                    cleanDataX.Add(doubleElementY);
                 }
             }
             else
@@ -104,22 +220,21 @@
                 cleanText.Add(dataCleaned);
             }
         }
-
+        return cleanDataY;
     }
 
-
-
-    private List<double> FilterDataThermo(string rawData)
+        private List<double> FilterDataThermo(string rawData)
     {
         string[] rawDataArray = rawData.Split(";");
 
         string[] splitData = new string[rawDataArray.Length];
+        //double[] cleanData = new double[];
         List<double> cleanData = new List<double>();
         List<string> cleanText = new List<string>();
 
         foreach (var data in rawDataArray)
         {
-            var dataCleaned = data.Trim(new Char[] { ' ', '\n', '\r', '\'' });
+            var dataCleaned = data.Trim(new Char[] { ' ', '\n', '\r', '\''  });
             bool isDouble = double.TryParse(dataCleaned, out double doubleElement);
             if (isDouble)
             {
@@ -132,6 +247,8 @@
         }
         return cleanData;
     }
+
+    
 
 
 }

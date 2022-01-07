@@ -89,14 +89,19 @@ using BlazorInputFile;
 #line default
 #line hidden
 #nullable disable
+<<<<<<< HEAD:blazor-google-chartsV2/blazor-google-charts/obj/Release/net5.0/RazorDeclaration/Pages/Testing.razor.g.cs
     [Microsoft.AspNetCore.Components.RouteAttribute("/FileImport")]
     public partial class Testing : Microsoft.AspNetCore.Components.ComponentBase
+=======
+    public partial class Component : Microsoft.AspNetCore.Components.ComponentBase
+>>>>>>> parent of 32057c2 (working version with zoom to share):blazor-google-chartsV2/blazor-google-charts/obj/Debug/net5.0/RazorDeclaration/Pages/Component.razor.g.cs
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+<<<<<<< HEAD:blazor-google-chartsV2/blazor-google-charts/obj/Release/net5.0/RazorDeclaration/Pages/Testing.razor.g.cs
 #nullable restore
 #line 33 "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
       
@@ -213,6 +218,8 @@ using BlazorInputFile;
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntime { get; set; }
+=======
+>>>>>>> parent of 32057c2 (working version with zoom to share):blazor-google-chartsV2/blazor-google-charts/obj/Debug/net5.0/RazorDeclaration/Pages/Component.razor.g.cs
     }
 }
 #pragma warning restore 1591

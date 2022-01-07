@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\jakub.drahotsky\OneDrive - Thermo Fisher Scientific\Programovani\C_sharp\EDS_calculator\blazor-google-chartsV1\blazor-google-chartsV1\source\blazor-google-charts\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="_content/BlazorInputFile" Path="C:\Users\jakub.drahotsky\.nuget\packages\blazorinputfile\0.2.0\build\..\staticwebassets\" />
+</StaticWebAssets>

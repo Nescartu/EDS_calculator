@@ -3768,6 +3768,7 @@ F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts
 F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\ref\BlazorGoogleCharts.dll
 F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\BlazorGoogleCharts.pdb
 F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\BlazorGoogleCharts.csproj.AssemblyReference.cache
+<<<<<<< HEAD
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\bin\Debug\net5.0\wwwroot\_framework\blazor.boot.json
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\bin\Debug\net5.0\BlazorGoogleCharts.StaticWebAssets.xml
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\bin\Debug\net5.0\BlazorGoogleCharts.dll
@@ -4396,3 +4397,5 @@ C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.
 C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\Razor\Pages\Testing.razor.g.cs
 F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\RazorDeclaration\Pages\Testing.razor.g.cs
 F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\obj\Debug\net5.0\Razor\Pages\Testing.razor.g.cs
+=======
+>>>>>>> parent of 32057c2 (working version with zoom to share)
