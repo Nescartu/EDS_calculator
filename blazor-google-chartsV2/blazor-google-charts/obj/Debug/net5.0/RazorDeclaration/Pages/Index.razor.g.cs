@@ -99,6 +99,7 @@ using BlazorInputFile;
         #pragma warning restore 1998
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 31 "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Index.razor"
 =======
 #line 55 "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Index.razor"
@@ -108,6 +109,11 @@ using BlazorInputFile;
     private bool ChartHidden = true;
     Random Rand = new Random();
 
+=======
+#line 31 "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Index.razor"
+      
+    //notebookversion
+>>>>>>> parent of 12f5bd4 (before reverse)
     private void PlotData(double[] xs, double[] ys)
     {
         JsRuntime.InvokeVoidAsync("createNewChart", new { xs, ys });

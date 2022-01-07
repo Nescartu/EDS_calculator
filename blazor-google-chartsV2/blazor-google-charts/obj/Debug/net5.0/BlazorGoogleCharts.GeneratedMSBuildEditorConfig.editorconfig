@@ -10,4 +10,4 @@ build_property.EnableSingleFileAnalyzer =
 build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BlazorGoogleCharts
-build_property.ProjectDir = C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\
+build_property.ProjectDir = F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\

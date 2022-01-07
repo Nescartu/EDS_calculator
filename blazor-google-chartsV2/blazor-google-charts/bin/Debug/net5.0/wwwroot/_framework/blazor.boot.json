@@ -197,6 +197,7 @@
       "mscorlib.dll": "sha256-+dB3Q0YubUPF1oZDMVZn6ZCiRkzRomtLoq51T5FocJk=",
       "netstandard.dll": "sha256-dOHF0zANIyA4WS496iWrAkTuEFWSWrXJjZj2pQQHrMA=",
       "System.Private.CoreLib.dll": "sha256-C96+zv+mWW0XzMG520oRgAG1lHVY8xzWGc6oc6rFjws=",
+<<<<<<< HEAD
       "BlazorGoogleCharts.dll": "sha256-ikvxD0\/rRTqyKxVzDZ8FqJ53VpxlLYaddXdAirIKNAw="
 =======
       "Microsoft.CSharp.dll": "sha256-470oOFeTcRuThu3PEDt5u3Q4LZR0TiwPY8yHWlK+L0M=",
@@ -366,16 +367,23 @@
       "System.Private.CoreLib.dll": "sha256-7n\/jioZu+\/2tD7v1RgjTTrBrviX+kVwPFGJ\/JBsHQGA=",
       "BlazorGoogleCharts.dll": "sha256-FfCGuXd2Zt3D73HCvyJKlBcBLpZIGV6JJa0G1bUfpbs="
 >>>>>>> parent of 32057c2 (working version with zoom to share)
+=======
+      "BlazorGoogleCharts.dll": "sha256-kaumJYz8YsiVEcUDPiFqkznVjj6wPMURGmBi72QO1\/w="
+>>>>>>> parent of 12f5bd4 (before reverse)
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "BlazorGoogleCharts.pdb": "sha256-0XTX\/ePlcWkejBARIyhh7\/8vM80H+GF5wDG4dYVONvU="
 =======
       "BlazorGoogleCharts.pdb": "sha256-iv67uSR5rzAnppUAhOArKqm77Q5Be\/qE1ChL2kOG0Qs="
 >>>>>>> parent of 32057c2 (working version with zoom to share)
+=======
+      "BlazorGoogleCharts.pdb": "sha256-K+cPT9DZDK2YTPa3sCtXna+yVv2rkzIMwlrpeZ0jsAc="
+>>>>>>> parent of 12f5bd4 (before reverse)
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-Uv0JiOiPEvlGxygIhcdY8XYm\/Nt+zgVckKrqB2uih0w=",
