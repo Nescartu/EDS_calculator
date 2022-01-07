@@ -104,8 +104,12 @@ using BlazorInputFile;
         #pragma warning restore 1998
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:blazor-google-chartsV2/blazor-google-charts/obj/Debug/net5.0/RazorDeclaration/Pages/Testing.razor.g.cs
 #line 33 "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
+=======
+#line 33 "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
+>>>>>>> parent of 12f5bd4 (before reverse)
 =======
 #line 33 "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
 >>>>>>> parent of 12f5bd4 (before reverse)

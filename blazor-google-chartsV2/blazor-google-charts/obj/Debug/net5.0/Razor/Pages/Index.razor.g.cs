@@ -1,9 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #pragma checksum "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Index.razor" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "4eb92aec8110d2f61c288a60bbc938cba921bd2e"
 =======
 #pragma checksum "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Index.razor" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "ec3f608d28f91d8dc2fb751f597621b767bbe3ef"
 >>>>>>> parent of 32057c2 (working version with zoom to share)
+=======
+#pragma checksum "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Index.razor" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "8719d3472870f1e85104e61a8b8ccd1a9141690d"
+>>>>>>> parent of 12f5bd4 (before reverse)
 =======
 #pragma checksum "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Index.razor" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "8719d3472870f1e85104e61a8b8ccd1a9141690d"
 >>>>>>> parent of 12f5bd4 (before reverse)
@@ -287,10 +291,14 @@ __builder.AddContent(41, PointCount);
 >>>>>>> parent of 32057c2 (working version with zoom to share)
       
 <<<<<<< HEAD
+<<<<<<< HEAD
     private int PointCount = 123;
     private bool ChartHidden = true;
     Random Rand = new Random();
 
+=======
+    //notebookversion
+>>>>>>> parent of 12f5bd4 (before reverse)
 =======
     //notebookversion
 >>>>>>> parent of 12f5bd4 (before reverse)

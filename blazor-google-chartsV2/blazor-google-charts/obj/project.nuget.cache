@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "fV4SrsOaAYU92TktLGD+jsRc6LC375gXgISLWimLrljPcD/eAPgbB9mjVzRa9JcGumvlLTbwR/EgCXWmuibO7A==",
 =======
   "dgSpecHash": "cRcmrFQZ4ds5uU70iS5kqOzoTSSKDZ9BmmW3NIb0aR5c3z7OcUKPD47/udgrrJg4WgkckfJ0rvCCG6jBuA+vAg==",
@@ -37,6 +38,12 @@
     "C:\\Users\\jakub.drahotsky\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\jakub.drahotsky\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512"
 =======
+=======
+  "dgSpecHash": "cRcmrFQZ4ds5uU70iS5kqOzoTSSKDZ9BmmW3NIb0aR5c3z7OcUKPD47/udgrrJg4WgkckfJ0rvCCG6jBuA+vAg==",
+  "success": true,
+  "projectFilePath": "F:\\C_sharp\\2021_12_27\\EDS_calculator\\blazor-google-chartsV2\\blazor-google-charts\\BlazorGoogleCharts.csproj",
+  "expectedPackageFiles": [
+>>>>>>> parent of 12f5bd4 (before reverse)
     "C:\\Users\\kubad\\.nuget\\packages\\blazorinputfile\\0.2.0\\blazorinputfile.0.2.0.nupkg.sha512",
     "C:\\Users\\kubad\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.1\\microsoft.aspnetcore.authorization.5.0.1.nupkg.sha512",
     "C:\\Users\\kubad\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.1\\microsoft.aspnetcore.components.5.0.1.nupkg.sha512",
@@ -65,6 +72,9 @@
     "C:\\Users\\kubad\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\kubad\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
     "C:\\Users\\kubad\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.13\\microsoft.netcore.app.runtime.browser-wasm.5.0.13.nupkg.sha512"
+<<<<<<< HEAD
+>>>>>>> parent of 12f5bd4 (before reverse)
+=======
 >>>>>>> parent of 12f5bd4 (before reverse)
   ],
   "logs": []

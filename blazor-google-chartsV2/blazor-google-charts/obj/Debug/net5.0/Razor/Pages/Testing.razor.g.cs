@@ -1,9 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:blazor-google-chartsV2/blazor-google-charts/obj/Debug/net5.0/Razor/Pages/Testing.razor.g.cs
 #pragma checksum "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "52c8d37804ce8d3da8b1690dbdfe7d7ef188545b"
 =======
 #pragma checksum "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\ImportFile.razor" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "83fa033fdc960e8df7ad4ad88a07c78f4b20eb29"
 >>>>>>> parent of 32057c2 (working version with zoom to share):blazor-google-chartsV2/blazor-google-charts/obj/Debug/net5.0/Razor/Pages/ImportFile.razor.g.cs
+=======
+#pragma checksum "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "52c8d37804ce8d3da8b1690dbdfe7d7ef188545b"
+>>>>>>> parent of 12f5bd4 (before reverse)
 =======
 #pragma checksum "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "52c8d37804ce8d3da8b1690dbdfe7d7ef188545b"
 >>>>>>> parent of 12f5bd4 (before reverse)
@@ -111,8 +115,12 @@ using BlazorInputFile;
             __builder.AddAttribute(3, "OnChange", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.InputFileChangeEventArgs>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.InputFileChangeEventArgs>(this, 
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:blazor-google-chartsV2/blazor-google-charts/obj/Debug/net5.0/Razor/Pages/Testing.razor.g.cs
 #line 10 "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
+=======
+#line 10 "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
+>>>>>>> parent of 12f5bd4 (before reverse)
 =======
 #line 10 "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
 >>>>>>> parent of 12f5bd4 (before reverse)
@@ -191,8 +199,12 @@ using BlazorInputFile;
             __builder.AddAttribute(8, "src", 
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:blazor-google-chartsV2/blazor-google-charts/obj/Debug/net5.0/Razor/Pages/Testing.razor.g.cs
 #line 26 "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
+=======
+#line 26 "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
+>>>>>>> parent of 12f5bd4 (before reverse)
 =======
 #line 26 "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
 >>>>>>> parent of 12f5bd4 (before reverse)
@@ -214,8 +226,12 @@ using BlazorInputFile;
         #pragma warning restore 1998
 #nullable restore
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:blazor-google-chartsV2/blazor-google-charts/obj/Debug/net5.0/Razor/Pages/Testing.razor.g.cs
 #line 33 "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
+=======
+#line 33 "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
+>>>>>>> parent of 12f5bd4 (before reverse)
 =======
 #line 33 "F:\C_sharp\2021_12_27\EDS_calculator\blazor-google-chartsV2\blazor-google-charts\Pages\Testing.razor"
 >>>>>>> parent of 12f5bd4 (before reverse)
