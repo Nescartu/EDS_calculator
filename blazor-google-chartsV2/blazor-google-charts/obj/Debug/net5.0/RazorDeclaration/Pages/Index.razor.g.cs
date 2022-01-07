@@ -100,6 +100,7 @@ using BlazorInputFile;
 #nullable restore
 #line 31 "C:\Projects\Programs\blazor-google-chartsV2\blazor-google-charts\Pages\Index.razor"
       
+    //notebookversion
     private void PlotData(double[] xs, double[] ys)
     {
         JsRuntime.InvokeVoidAsync("createNewChart", new { xs, ys });
