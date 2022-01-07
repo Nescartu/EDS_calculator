@@ -196,13 +196,13 @@
       "mscorlib.dll": "sha256-+dB3Q0YubUPF1oZDMVZn6ZCiRkzRomtLoq51T5FocJk=",
       "netstandard.dll": "sha256-dOHF0zANIyA4WS496iWrAkTuEFWSWrXJjZj2pQQHrMA=",
       "System.Private.CoreLib.dll": "sha256-C96+zv+mWW0XzMG520oRgAG1lHVY8xzWGc6oc6rFjws=",
-      "BlazorGoogleCharts.dll": "sha256-Haubdbht0WhxBVlMwJdK4n5qiBTdzexeWnkRK5Asyo4="
+      "BlazorGoogleCharts.dll": "sha256-ikvxD0\/rRTqyKxVzDZ8FqJ53VpxlLYaddXdAirIKNAw="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BlazorGoogleCharts.pdb": "sha256-yAkCnfclz2XsLMnutVPyVZBkLtwHge9Jk3GxuTQ7KCc="
+      "BlazorGoogleCharts.pdb": "sha256-0XTX\/ePlcWkejBARIyhh7\/8vM80H+GF5wDG4dYVONvU="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-ir9YCVnnk7popgsYUkvitfGA4WpkP1ydPh\/ENHnxGys=",
